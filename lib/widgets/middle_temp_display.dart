@@ -13,7 +13,7 @@ class MiddleTempDisplay extends StatelessWidget {
           children: [
             CircleAvatar(
               radius: 60,
-              child: Text(temperature.toString(), style: TextStyle(fontSize: 30),),
+              child: Text(temperature.toString(), style: const TextStyle(fontSize: 30),),
             ),
             const Positioned(width: 190, height: 190,child: Icon(Icons.umbrella, size: 50,),)
           ],
