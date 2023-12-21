@@ -7,13 +7,17 @@ class MiddleTempDisplay extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Stack(
+    return Column(
       children: [
-        CircleAvatar(
-          radius: 60,
-          child: Text(temperature.toString(), style: TextStyle(fontSize: 30),),
+        Stack(
+          children: [
+            CircleAvatar(
+              radius: 60,
+              child: Text(temperature.toString(), style: TextStyle(fontSize: 30),),
+            ),
+            const Positioned(width: 190, height: 190,child: Icon(Icons.umbrella, size: 50,),)
+          ],
         ),
-        const Positioned(width: 190, height: 190,child: Icon(Icons.umbrella, size: 50,),)
       ],
     );
   }
