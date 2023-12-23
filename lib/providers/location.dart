@@ -6,6 +6,7 @@ class LocationProvider with ChangeNotifier {
   final Location _locationService = Location();
 
   Future<LocationData?> getCurrentLocation () async {
+
     bool serviceEnabled;
     PermissionStatus permissionGranted;
 
