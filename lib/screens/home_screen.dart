@@ -12,7 +12,7 @@ class HomeScreen extends StatelessWidget {
           backgroundColor: const Color(0xFF3A2E39),
         ),
         backgroundColor: const Color(0xFFADA8B6),
-        body: Center(
+        body: const Center(
           child: MiddleTempDisplay(47),
         ));
   }
